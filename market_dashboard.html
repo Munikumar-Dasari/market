@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+{% load  static %}
+<html lang="en">
+<head>
+    <title>Cinystore||Market</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/assets/market.css' %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="market-dashboard-main-bg-container pb-3">
+
+        <nav class="business-nav-container fixed-top mb-5" id="corporate-business-navbar">
+            <div class="navbar-brand d-flex ml-2 ml-md-3">
+                <img src="https://www.cinystore.com/static/img/logo.webp" alt="logo" class="business-logo" />
+                <div>
+                    <h1 class="business-logo-name">CinyStore</h1>
+                    <p class="business-logo-name-description" id="businessLogoName">Poora Filmy Hai Boos</p>
+                    <p class="business-logo-sub-description" id="businessLogoSub">Beta Version</p>
+                </div>
+            </div>
+        </nav>
+        <div class="container pt-5">
+            <h1 class="market-dashboard-heading">Movies</h1>
+            <div class="row pl-md-4 pl-md-4 mb-4">
+                <div class="col-12 col-md-3">
+                    <div class="movie-bg-container">
+                        <div class="movie-img-container">
+                            <img src="https://i.ytimg.com/vi/lDVQojLPI4Y/maxresdefault.jpg" alt="movie-img" class="movie-img" />
+                        </div>
+                        <p class="movie-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                            <span><button class="movie-read-more-btn" data-bs-toggle="modal"  data-bs-target="#exampleModal">read more</button></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="movie-bg-container">
+                        <div class="movie-img-container">
+                            <img src="https://i.ytimg.com/vi/lDVQojLPI4Y/maxresdefault.jpg" alt="movie-img" class="movie-img" />
+                        </div>
+                        <p class="movie-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                            <span><button class="movie-read-more-btn" data-bs-toggle="modal"  data-bs-target="#exampleModal">read more</button></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="movie-bg-container">
+                        <div class="movie-img-container">
+                            <img src="https://i.ytimg.com/vi/lDVQojLPI4Y/maxresdefault.jpg" alt="movie-img" class="movie-img" />
+                        </div>
+                        <p class="movie-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                            <span><button class="movie-read-more-btn" data-bs-toggle="modal"  data-bs-target="#exampleModal">read more</button></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="movie-bg-container">
+                        <div class="movie-img-container">
+                            <img src="https://i.ytimg.com/vi/lDVQojLPI4Y/maxresdefault.jpg" alt="movie-img" class="movie-img" />
+                        </div>
+                        <p class="movie-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                            <span><button class="movie-read-more-btn" data-bs-toggle="modal"  data-bs-target="#exampleModal">read more</button></span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="movie-pop-title modal-title fs-5" id="exampleModalLabel">RRR</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body pb-4">
+                          <div class="movie-pop-img-container">
+                            <img src="https://i.ytimg.com/vi/lDVQojLPI4Y/maxresdefault.jpg" alt="movie-img" class="movie-pop-img" />
+                        </div>
+                        <p class="movie-pop-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                        </p>
+                      </div>
+                      <!--<div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>-->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <h1 class="market-dashboard-heading">Reviews</h1>
+            <div class="row pl-md-4 mb-4">
+                <div class="col-12 col-md-4">
+                    <div class="movie-bg-container">
+                        <h1 class="movie-name">RRR</h1>
+                        <p class="movie-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                        </p>
+                        <h3 class="movie-reviewer-name">Review by Muni</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="movie-bg-container">
+                        <h1 class="movie-name">RRR</h1>
+                        <p class="movie-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                        </p>
+                        <h3 class="movie-reviewer-name">Review by Muni</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="movie-bg-container">
+                        <h1 class="movie-name">RRR</h1>
+                        <p class="movie-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it to make a type specimen book
+                        </p>
+                        <h3 class="movie-reviewer-name">Review by Muni</h3>
+                    </div>
+                </div>
+            </div>
+            <h1 class="market-dashboard-heading">Production Houses</h1>
+            <div class="row pl-md-4 mb-4">
+                <div class="col-12">
+                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                </div>
+               <!--<div class="col-12 col-md-2">
+                   <div class="production-bg-container">
+                       <div class="production-img-container">
+                           <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="production-img" />
+                       </div>
+                       <h1 class="production-name">Sri Venkateswara</h1>
+                   </div>
+               </div>
+                <div class="col-12 col-md-2">
+                   <div class="production-bg-container">
+                       <div class="production-img-container">
+                           <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="production-img" />
+                       </div>
+                       <h1 class="production-name">Sri Venkateswara</h1>
+                   </div>
+               </div>
+                <div class="col-12 col-md-2">
+                   <div class="production-bg-container">
+                       <div class="production-img-container">
+                           <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="production-img" />
+                       </div>
+                       <h1 class="production-name">Sri Venkateswara</h1>
+                   </div>
+               </div>
+                <div class="col-12 col-md-2">
+                   <div class="production-bg-container">
+                       <div class="production-img-container">
+                           <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="production-img" />
+                       </div>
+                       <h1 class="production-name">Sri Venkateswara</h1>
+                   </div>
+               </div>
+                <div class="col-12 col-md-2">
+                   <div class="production-bg-container">
+                       <div class="production-img-container">
+                           <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="production-img" />
+                       </div>
+                       <h1 class="production-name">Sri Venkateswara</h1>
+                   </div>
+               </div>
+                <div class="col-12 col-md-2">
+                   <div class="production-bg-container">
+                       <div class="production-img-container">
+                           <img src="https://upload.wikimedia.org/wikipedia/en/8/83/Sri_Venkateswara_Cine_Chitra.jpg" class="production-img" />
+                       </div>
+                       <h1 class="production-name">Sri Venkateswara</h1>
+                   </div>
+               </div>-->
+            </div>
+        </div>
+    </div>
+<!--scripts-->
+    <script src="{% static 'js/market.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
