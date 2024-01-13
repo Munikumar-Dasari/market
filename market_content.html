@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+{% extends "market_base.html" %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block header %}
+<div class="producer-content-main-bg-container">
+    <div class="producer-content-top-text-div">
+        <h1 class="producer-content-top-text">Content</h1>
+        <a href="{% url 'market_create_blog' %}">
+            <button class="producer-content-top-btn">Create Blog</button>
+        </a>
+    </div>
+    <div class="producer-content-main-text-bg-container">
+         <div class="market-content-scroll-container" id="labels">
+            <div class="producer-each-content-div">
+                <div class="d-flex">
+                    <div class="producer-each-content-img-div">
+                        <img src="{% static 'producerImages/image 11.png' %}" alt="image" class="producer-each-content-img"/>
+                    </div>
+                    <div class="producer-each-content-text-div">
+                        <h1 class="producer-each-content-text-head">SKYDOG</h1>
+                        <div class="producer-each-content-text-sub-head-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                              <path d="M2.22222 5H3.33333V6.11111H2.22222V5ZM10 2.22222V10C10 10.6111 9.5 11.1111 8.88889 11.1111H1.11111C0.816426 11.1111 0.533811 10.994 0.325437 10.7857C0.117063 10.5773 0 10.2947 0 10L0.00555555 2.22222C0.00555555 1.61111 0.494444 1.11111 1.11111 1.11111H1.66667V0H2.77778V1.11111H7.22222V0H8.33333V1.11111H8.88889C9.5 1.11111 10 1.61111 10 2.22222ZM1.11111 3.33333H8.88889V2.22222H1.11111V3.33333ZM8.88889 10V4.44444H1.11111V10H8.88889ZM6.66667 6.11111H7.77778V5H6.66667V6.11111ZM4.44444 6.11111H5.55556V5H4.44444V6.11111Z" fill="#42E4CE"/>
+                            </svg>
+                            <h2 class="producer-each-content-text-sub-head">Created on : Nov, 16, 2023</h2>
+                        </div>
+                        <p class="producer-each-content-description">
+                             A man is driven by a personal vendetta to rectify the wrongs in society...
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-pencil" viewBox="0 0 16 16">
+                          <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Edit</a>
+                    </div>
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Delete</a>
+                    </div>
+                </div>
+            </div>
+             <div class="producer-each-content-div">
+                <div class="d-flex">
+                    <div class="producer-each-content-img-div">
+                        <img src="{% static 'producerImages/image 11.png' %}" alt="image" class="producer-each-content-img"/>
+                    </div>
+                    <div class="producer-each-content-text-div">
+                        <h1 class="producer-each-content-text-head">SKYDOG</h1>
+                        <div class="producer-each-content-text-sub-head-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                              <path d="M2.22222 5H3.33333V6.11111H2.22222V5ZM10 2.22222V10C10 10.6111 9.5 11.1111 8.88889 11.1111H1.11111C0.816426 11.1111 0.533811 10.994 0.325437 10.7857C0.117063 10.5773 0 10.2947 0 10L0.00555555 2.22222C0.00555555 1.61111 0.494444 1.11111 1.11111 1.11111H1.66667V0H2.77778V1.11111H7.22222V0H8.33333V1.11111H8.88889C9.5 1.11111 10 1.61111 10 2.22222ZM1.11111 3.33333H8.88889V2.22222H1.11111V3.33333ZM8.88889 10V4.44444H1.11111V10H8.88889ZM6.66667 6.11111H7.77778V5H6.66667V6.11111ZM4.44444 6.11111H5.55556V5H4.44444V6.11111Z" fill="#42E4CE"/>
+                            </svg>
+                            <h2 class="producer-each-content-text-sub-head">Created on : Nov, 16, 2023</h2>
+                        </div>
+                        <p class="producer-each-content-description">
+                             A man is driven by a personal vendetta to rectify the wrongs in society...
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-pencil" viewBox="0 0 16 16">
+                          <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Edit</a>
+                    </div>
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Delete</a>
+                    </div>
+                </div>
+            </div>
+             <div class="producer-each-content-div">
+                <div class="d-flex">
+                    <div class="producer-each-content-img-div">
+                        <img src="{% static 'producerImages/image 11.png' %}" alt="image" class="producer-each-content-img"/>
+                    </div>
+                    <div class="producer-each-content-text-div">
+                        <h1 class="producer-each-content-text-head">SKYDOG</h1>
+                        <div class="producer-each-content-text-sub-head-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                              <path d="M2.22222 5H3.33333V6.11111H2.22222V5ZM10 2.22222V10C10 10.6111 9.5 11.1111 8.88889 11.1111H1.11111C0.816426 11.1111 0.533811 10.994 0.325437 10.7857C0.117063 10.5773 0 10.2947 0 10L0.00555555 2.22222C0.00555555 1.61111 0.494444 1.11111 1.11111 1.11111H1.66667V0H2.77778V1.11111H7.22222V0H8.33333V1.11111H8.88889C9.5 1.11111 10 1.61111 10 2.22222ZM1.11111 3.33333H8.88889V2.22222H1.11111V3.33333ZM8.88889 10V4.44444H1.11111V10H8.88889ZM6.66667 6.11111H7.77778V5H6.66667V6.11111ZM4.44444 6.11111H5.55556V5H4.44444V6.11111Z" fill="#42E4CE"/>
+                            </svg>
+                            <h2 class="producer-each-content-text-sub-head">Created on : Nov, 16, 2023</h2>
+                        </div>
+                        <p class="producer-each-content-description">
+                             A man is driven by a personal vendetta to rectify the wrongs in society...
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-pencil" viewBox="0 0 16 16">
+                          <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Edit</a>
+                    </div>
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Delete</a>
+                    </div>
+                </div>
+            </div>
+             <div class="producer-each-content-div">
+                <div class="d-flex">
+                    <div class="producer-each-content-img-div">
+                        <img src="{% static 'producerImages/image 11.png' %}" alt="image" class="producer-each-content-img"/>
+                    </div>
+                    <div class="producer-each-content-text-div">
+                        <h1 class="producer-each-content-text-head">SKYDOG</h1>
+                        <div class="producer-each-content-text-sub-head-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                              <path d="M2.22222 5H3.33333V6.11111H2.22222V5ZM10 2.22222V10C10 10.6111 9.5 11.1111 8.88889 11.1111H1.11111C0.816426 11.1111 0.533811 10.994 0.325437 10.7857C0.117063 10.5773 0 10.2947 0 10L0.00555555 2.22222C0.00555555 1.61111 0.494444 1.11111 1.11111 1.11111H1.66667V0H2.77778V1.11111H7.22222V0H8.33333V1.11111H8.88889C9.5 1.11111 10 1.61111 10 2.22222ZM1.11111 3.33333H8.88889V2.22222H1.11111V3.33333ZM8.88889 10V4.44444H1.11111V10H8.88889ZM6.66667 6.11111H7.77778V5H6.66667V6.11111ZM4.44444 6.11111H5.55556V5H4.44444V6.11111Z" fill="#42E4CE"/>
+                            </svg>
+                            <h2 class="producer-each-content-text-sub-head">Created on : Nov, 16, 2023</h2>
+                        </div>
+                        <p class="producer-each-content-description">
+                             A man is driven by a personal vendetta to rectify the wrongs in society...
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-pencil" viewBox="0 0 16 16">
+                          <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Edit</a>
+                    </div>
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Delete</a>
+                    </div>
+                </div>
+            </div>
+             <div class="producer-each-content-div">
+                <div class="d-flex">
+                    <div class="producer-each-content-img-div">
+                        <img src="{% static 'producerImages/image 11.png' %}" alt="image" class="producer-each-content-img"/>
+                    </div>
+                    <div class="producer-each-content-text-div">
+                        <h1 class="producer-each-content-text-head">SKYDOG</h1>
+                        <div class="producer-each-content-text-sub-head-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                              <path d="M2.22222 5H3.33333V6.11111H2.22222V5ZM10 2.22222V10C10 10.6111 9.5 11.1111 8.88889 11.1111H1.11111C0.816426 11.1111 0.533811 10.994 0.325437 10.7857C0.117063 10.5773 0 10.2947 0 10L0.00555555 2.22222C0.00555555 1.61111 0.494444 1.11111 1.11111 1.11111H1.66667V0H2.77778V1.11111H7.22222V0H8.33333V1.11111H8.88889C9.5 1.11111 10 1.61111 10 2.22222ZM1.11111 3.33333H8.88889V2.22222H1.11111V3.33333ZM8.88889 10V4.44444H1.11111V10H8.88889ZM6.66667 6.11111H7.77778V5H6.66667V6.11111ZM4.44444 6.11111H5.55556V5H4.44444V6.11111Z" fill="#42E4CE"/>
+                            </svg>
+                            <h2 class="producer-each-content-text-sub-head">Created on : Nov, 16, 2023</h2>
+                        </div>
+                        <p class="producer-each-content-description">
+                             A man is driven by a personal vendetta to rectify the wrongs in society...
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-pencil" viewBox="0 0 16 16">
+                          <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Edit</a>
+                    </div>
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Delete</a>
+                    </div>
+                </div>
+            </div>
+             <div class="producer-each-content-div">
+                <div class="d-flex">
+                    <div class="producer-each-content-img-div">
+                        <img src="{% static 'producerImages/image 11.png' %}" alt="image" class="producer-each-content-img"/>
+                    </div>
+                    <div class="producer-each-content-text-div">
+                        <h1 class="producer-each-content-text-head">SKYDOG</h1>
+                        <div class="producer-each-content-text-sub-head-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                              <path d="M2.22222 5H3.33333V6.11111H2.22222V5ZM10 2.22222V10C10 10.6111 9.5 11.1111 8.88889 11.1111H1.11111C0.816426 11.1111 0.533811 10.994 0.325437 10.7857C0.117063 10.5773 0 10.2947 0 10L0.00555555 2.22222C0.00555555 1.61111 0.494444 1.11111 1.11111 1.11111H1.66667V0H2.77778V1.11111H7.22222V0H8.33333V1.11111H8.88889C9.5 1.11111 10 1.61111 10 2.22222ZM1.11111 3.33333H8.88889V2.22222H1.11111V3.33333ZM8.88889 10V4.44444H1.11111V10H8.88889ZM6.66667 6.11111H7.77778V5H6.66667V6.11111ZM4.44444 6.11111H5.55556V5H4.44444V6.11111Z" fill="#42E4CE"/>
+                            </svg>
+                            <h2 class="producer-each-content-text-sub-head">Created on : Nov, 16, 2023</h2>
+                        </div>
+                        <p class="producer-each-content-description">
+                             A man is driven by a personal vendetta to rectify the wrongs in society...
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-pencil" viewBox="0 0 16 16">
+                          <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Edit</a>
+                    </div>
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Delete</a>
+                    </div>
+                </div>
+            </div>
+             <div class="producer-each-content-div">
+                <div class="d-flex">
+                    <div class="producer-each-content-img-div">
+                        <img src="{% static 'producerImages/image 11.png' %}" alt="image" class="producer-each-content-img"/>
+                    </div>
+                    <div class="producer-each-content-text-div">
+                        <h1 class="producer-each-content-text-head">SKYDOG</h1>
+                        <div class="producer-each-content-text-sub-head-div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                              <path d="M2.22222 5H3.33333V6.11111H2.22222V5ZM10 2.22222V10C10 10.6111 9.5 11.1111 8.88889 11.1111H1.11111C0.816426 11.1111 0.533811 10.994 0.325437 10.7857C0.117063 10.5773 0 10.2947 0 10L0.00555555 2.22222C0.00555555 1.61111 0.494444 1.11111 1.11111 1.11111H1.66667V0H2.77778V1.11111H7.22222V0H8.33333V1.11111H8.88889C9.5 1.11111 10 1.61111 10 2.22222ZM1.11111 3.33333H8.88889V2.22222H1.11111V3.33333ZM8.88889 10V4.44444H1.11111V10H8.88889ZM6.66667 6.11111H7.77778V5H6.66667V6.11111ZM4.44444 6.11111H5.55556V5H4.44444V6.11111Z" fill="#42E4CE"/>
+                            </svg>
+                            <h2 class="producer-each-content-text-sub-head">Created on : Nov, 16, 2023</h2>
+                        </div>
+                        <p class="producer-each-content-description">
+                             A man is driven by a personal vendetta to rectify the wrongs in society...
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-pencil" viewBox="0 0 16 16">
+                          <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Edit</a>
+                    </div>
+                    <div class="producer-each-content-edit-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#54c6d4" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <a class="producer-each-content-edit-text">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
